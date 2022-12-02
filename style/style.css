@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: title;
-    src: url("../fonts/Mukta-Bold.ttf");
+    src: url("./fonts/Mukta-Bold.ttf");
 }
 
 @font-face {
     font-family: texto;
-    src: url("../fonts/Mukta-light.ttf");
+    src: url("./fonts/Mukta-light.ttf");
 }
 
 * {
