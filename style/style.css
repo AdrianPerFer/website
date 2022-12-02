@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: text;
+    font-family: texto;
     src: url("../fonts/Mukta-light.ttf");
 }
 
@@ -31,7 +31,7 @@ hr {
 
 /** NAV **/
 nav {
-    font-family: text;
+    font-family: texto;
     position:sticky;
     top:0;
     z-index:99;
@@ -206,7 +206,7 @@ nav {
 /***** WOW1 & WOW3 *****/
 .grid4 {
     margin-top: 0%;
-    font-family: text;
+    font-family: texto;
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
@@ -272,7 +272,7 @@ nav {
 }
 
 .texto {
-    font-family: text;
+    font-family: texto;
     color:#EBDEC2 ;
     padding:20px;
     font-size:1.2rem;
@@ -304,7 +304,7 @@ footer {
 
 .col3 {
     color:#f2ede3;
-    font-family: text;
+    font-family: texto;
     padding:5%;
 }        
 
