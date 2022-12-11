@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: title;
-    src: url("../fonts/Mukta-Bold.ttf");
+    src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
-    font-family: texto;
-    src: url("../fonts/Mukta-light.ttf");
+    font-family: text;
+    src: url("../fonts/OpenSans-Light.ttf");
 }
 
 * {
@@ -31,7 +31,7 @@ hr {
 
 /** NAV **/
 nav {
-    font-family: texto;
+    font-family: text;
     position:sticky;
     top:0;
     z-index:99;
@@ -86,13 +86,14 @@ nav {
 #content {
     margin: 1%;
     color: #EBDEC2;
-    font-family: texto;
+    font-family: text;
     text-align: center;
 }
 
 #content p {
+    margin: 0% 3%;
     font-size: 1.2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .button {
@@ -113,6 +114,7 @@ nav {
 
 /*** GALLERY ***/
 #image {
+    margin-top: 5%;
     display: block;
 }
   
@@ -205,8 +207,9 @@ nav {
   
 /***** WOW1 & WOW3 *****/
 .grid4 {
-    margin-top: 0%;
-    font-family: texto;
+    margin-top: 5%;
+    margin-bottom: 6%;
+    font-family: text;
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
@@ -216,11 +219,13 @@ nav {
 
 .col4 {
     margin: 1%;
+    padding-bottom: 1%;
     background-color: #211510;
     text-decoration: none;
 }
 
 .parte1 {
+    padding-top: 2%;
     color:#EBDEC2 ;
     font-size: 1.4rem;
 }
@@ -236,12 +241,9 @@ nav {
 }
 
 .card {
-    transition: 0.3s;
+    opacity: 0.7;
+    transition: 0.2s;
     padding: 0,2%;
-}
-   
-.card:hover {
-    box-shadow: 1px 1px 1px 1px  #f4d316;
 }
    
 .container {
@@ -267,12 +269,13 @@ nav {
 
 /***** INFO1 & INFO3 *****/
 .grid2 {
+    margin-top: 6%;
     display:grid;
     grid-template-columns: 50% 50%;
 }
 
 .texto {
-    font-family: texto;
+    font-family: text;
     color:#EBDEC2 ;
     padding:20px;
     font-size:1.2rem;
@@ -283,13 +286,13 @@ nav {
 }
 
 .col2 img {
+    margin-bottom: 5%;
     width:100%;
 }
 
 /***** FOOTER *****/
 footer {
     margin-top: 5%;
-    background-image: url(../images/footer.jfif);
     opacity: 0.7;
     background-size: cover;
     background-position: 0;
@@ -299,24 +302,28 @@ footer {
 .grid3 {
     background-color: rgba(0, 0, 0, 0.338);
     display:grid;
-    grid-template-columns: 25% 25% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+#colu1 {
+    text-align: right;
+    margin-right: 10%;
 }
 
 .col3 {
     color:#f2ede3;
-    font-family: texto;
+    font-family: title;
     padding:5%;
 }        
 
 .col3 a {
     text-decoration: none;
-    color:#f2ede3;
+    color:#d3d2d2;
 }
 
-.col3 img {
-    width:30%;
-    display:block;
-    margin: 5% 5% 5% 30%;
+.col3 a:hover {
+    opacity: 0.8;
+    color: #ffdd00;
 }
 
 .fa {
@@ -353,6 +360,27 @@ footer {
     color: white;
 }
 
+/**** BUTTON TOP ****/
+.ir-arriba{
+    padding:15px 18px;
+    background:black;
+    font-size:20px !important;
+    color:white;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    z-index: 100;
+    border-radius: 50%;
+    box-shadow: 0px 3px 4px 0px #3c3c3c;
+    transition: 0.3s;
+}
+
+.ir-arriba:hover{
+    box-shadow: 0px 3px 10px 0px #3c3c3c;
+    transition: 0.3s;
+}
+
 /***** MEDIA QUERY *****/
 @media only screen and (max-width: 1300px){
     .grid2 {
@@ -363,7 +391,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -390,4 +418,5 @@ footer {
     .grid4 {
         grid-template-columns:100%;
     }
+
 }
